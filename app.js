@@ -20,8 +20,9 @@ function verificarChute(){
     }else{
         chute > numeroSecreto ? mostrarTexto('p','Numero secreto é menor') : mostrarTexto('p','Numero secreto é maior');
         limparCampo()
+        tentativas++;
     }
-    tentativas++;
+    
 }
 function iniciarJogo() {
     mostrarTexto('h1', 'Jogo do número secreto');
